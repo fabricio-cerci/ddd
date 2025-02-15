@@ -29,6 +29,26 @@ que satisfaça o que o sistema está pedindo
 - Entidades que não possuem regras de negócio
 - É praticamente um DTO (Data Transfer Object)
 
->A modelagem do sistema rico, expressa o negócio
+### ORM
+- Para persistir dados com um ORM você precisa de uma "entidade de persistência", que normalmente tem nome de model, modelo e por ai vai
+- Então você usa a entidade para validar negócio e para persistir você usa o model, claro que para isso vai precisar existir um mapeamento de um para o outro, mas é o jeito correto de fazer as coisas
+- Por isso muitas pessoas tem visão de getters and setters para entidade, por conta dessa visão de ORM
+- Pare de chamar esse cara de persistência de dados como entidade e sim como model por exemplo
+
+>Complexidade de negócio
+>- Domain
+>   - Entity
+>       - customer.ts (regra de negócio)
+>
+>Complexidade acidental
+>- infra - Mundo externo
+>   - Entity / Model
+>       - customer.ts (get ,set)
+
+>A modelagem do sistema rico, expressa o negócio.
 
 >Quando temos apenas um set e um get eles não significam muito pois só atribuem valor sem nenhum significado, mas quando temos um método específico pensando na mudança daquele campo, estamos criando um domínio rico e estamos    usando uma regra de negócio.
+
+>Quando estiver desenvolvendo você tem que ter uma clareza se o arquivo que está mexendo está resolvendo um problema de neǵocio, ou está resolvendo complexidades no software na qual você está colocando e que você tem escolha para mudar isso ou não.
+
+>Um grande erro dos desenvolvedores é tratar as duas complexidades como a mesma coisa, e começamos a usar nomes iguais para coisas completamentes diferentes. E isso gera vários problemas.
