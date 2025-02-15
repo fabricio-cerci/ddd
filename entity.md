@@ -5,6 +5,11 @@
 - Possui comportamentos
 - Possui regras de negócio
 - A validação dentro de DDD significa garantir que o estado atual da minha entidade esteja sempre correto
+- A expressividade semântica é o que diferencia os métodos de um getter e setter
+- A entidade sempre vai ter que representar o estado correto e atual daquele elemento
+- Os dados a todo momento devem estar consistentes
+- A entidade deve ser algo confiável 100% das vezes na legitimitade de seu estado atual]
+- 100% das vezes deve estar consistente
 
 ## Entidade anêmica
 - Entidades que apenas guardam dados
