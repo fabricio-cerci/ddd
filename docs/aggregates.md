@@ -6,6 +6,7 @@
 - Quando você tem um relacionamento forte você liga duas entidades uma a outra por exemplo pela própria entidade, quando o relacionamento é fraco (uma não depende da outra para viver) você utiliza o identificador (id)
 - O nome do agregado é sempre o nome da raiz do agregado, a parte mais importante, onde ele começa (Root)
 - O nome do root é a representação de um conjunto de coisas que fazem aquilo existir
+- Se o objeto está no mesmo agregado a referência é feita pelo próprio objeto/classe, agora se estiver em outro agregado a referência é feita pelo identificador(id)
 
 >Order{
 >    item: Item[] (relacionamento forte um não vive sem o outro)
