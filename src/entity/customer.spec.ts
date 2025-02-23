@@ -41,7 +41,6 @@ describe("Customer unit tests", () => {
 
     it("should throw error when address is undefined when you activate a customer", () => {
         const customer = new Customer("1", "Customer 1");
-        
         expect(() => customer.activate()).toThrow("Address is mandatory to activate a customer");
     });
 });
