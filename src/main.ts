@@ -1,6 +1,6 @@
 import Customer from "./entity/customer";
 import Order from "./entity/order";
-import OrderItem from "./entity/order-item";
+import OrderItem from "./entity/order_item";
 import Address from "./value-object/address";
 
 let customer = new Customer("123", "Fabrício Cerci");
